@@ -10,7 +10,7 @@ const NewsComponent = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          'https://newsapi.org/v2/everything?q=apple&apiKey=913c2079b21441928bea1dcf10335fdc'
+          'https://newsapi.org/v2/everything?q=apple&from=2023-12-26&to=2023-12-26&sortBy=popularity&apiKey=913c2079b21441928bea1dcf10335fdc'
         );
         const data = await response.json();
 
