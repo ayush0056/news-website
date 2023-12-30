@@ -1,35 +1,64 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
 header {
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #343a40;
-  }
+  margin-top: 0;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  align-items: center;
+  background-color: #343a40;
+}
 
 .btn {
-    display: flex;
-    align-items: center;
-  }
+  display: flex;
+  align-items: center;
+}
+
+.btn button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.login {
+  margin-top: 10px;
+  background-color: #2196F3;
+}
+
+.btn-right {
   
-  
-  .btn button {
-    
-    margin-left: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    color: #fff;
-    border-radius: 5px;
+  text-align: right;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column; 
+    align-items: flex-start;
   }
 
-  .login {
-    margin-top: 10px;
-    background-color: #2196F3;
+  .btn {
+    margin-top: 10px; 
   }
-  
-  
+
+  .btn button {
+    margin-left: 0; 
+  }
+
   .btn-right {
-    text-align: right;
+    text-align: left; 
+    margin-top: 10px; 
   }
+}
