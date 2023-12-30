@@ -1,55 +1,44 @@
-
-
-.containers6 {
-  margin-top: -100px;
-  background-color: #ffffff; 
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.header {
+.containers6 {
+  background-color: #ffffff; 
+  margin: 0;
+}
+
+.header1 {
   background-color: #ffffff;
   color: #ffffff;
-  padding: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: space-between;
+  flex-direction: column; 
+  justify-content: center; 
   align-items: center;
+  position: relative; 
 }
 
 .title1 {
   margin: 0;
+  padding-top: 20px;
   font-size: 28px;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   color: #ffffff;
   line-height: 1.2;
-  text-decoration: underline; /* Add underline to the text */
+  text-decoration: underline; 
   text-decoration-color: #000000;
+  text-align: center; 
 }
 
 .title1 h1 {
   margin: 0;
 }
 
-.nav-bar {
-  display: flex;
-  gap: 20px;
-}
 
-.nav-link {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-  padding: 10px;
-  border-bottom: 2px solid transparent;
-  transition: border-bottom 0.3s ease-in-out;
-}
 
-.nav-link:hover {
-  border-bottom: 2px solid #007bff;
-}
-
-/* Add a subtle gradient effect to the header */
 .header::before {
   content: '';
   position: absolute;
@@ -61,6 +50,19 @@
   z-index: -1;
 }
 
-.btn-right {
-  margin-left: auto;
+.login {
+  max-width: 100%; 
+  margin-bottom: 20px;
+  padding: 12px 24px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.login:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
 }
