@@ -8,7 +8,7 @@ export const LoginSignup = () => {
   const[action,setAction] = useState("Login");
 
   return (
-    <div className='container9'>
+    <div className='container9'> 
       <div className="header">
         <div className="text">{action}</div>
         <div className="underline"></div>
