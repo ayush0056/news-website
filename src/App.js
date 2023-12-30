@@ -1,8 +1,6 @@
 import './App.css';
 
-import {BrowserRouter,Routes,Route,Link,} from 'react-router-dom'
-
-
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import { Landingpage } from './Components2/Landingpage/Landingpage';
 import Useapi from './Components2/Useapi/Useapi';
 import {LoginSignup} from './Components/LoginSignup/LoginSignup'
@@ -16,17 +14,10 @@ function App() {
   return (
     <>
        <BrowserRouter>
-       <header>
-          <Link to="/login" className='btn-right'>
-           <div className='btn'>
-            <button className='login'>Login/SignUp</button>
-           </div>
-          </Link>
-       </header>
           <Routes>
             <Route element={<Landingpage />}>
               <Route path="/"element={<Useapi />} />
-              <Route path="/login" element={<LoginSignup />} />
+              <Route path="/login-signup" element={<LoginSignup />} />
               
               <Route
                 path=':title'
